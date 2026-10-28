@@ -1,0 +1,38 @@
+# ===== 凭据 / 登录态（严禁入库） =====
+.env
+.env.bak*
+.env.*.bak*
+CREDENTIALS.txt
+*.pem
+*.key
+
+# ===== 运行时状态 / 缓存 =====
+onebot_bridge_state.json
+media_cache/
+qr_live/
+*.log
+logs/
+bot_log.txt
+login_log.txt
+login_raw.txt
+loop_stdout.log
+
+# ===== 二维码 / 截图（含登录态） =====
+login_qr.png
+qr_now.png
+qr_snapshot.png
+*_qr*.png
+qr_*.png
+
+# ===== Python =====
+__pycache__/
+*.py[cod]
+*.so
+.venv/
+venv/
+ENV/
+
+# ===== 其它 =====
+.dsh-vision-router/
+.DS_Store
+Thumbs.db

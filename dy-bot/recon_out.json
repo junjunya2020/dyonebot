@@ -1,0 +1,59 @@
+{
+  "probe": {
+    "found": [],
+    "endpoints": [
+      {
+        "ep": "/v1/message/send",
+        "at": "window._vc_intercepted_pathList.include.4"
+      }
+    ],
+    "version": null,
+    "notes": [],
+    "imHosts": [],
+    "sdkMethods": []
+  },
+  "requests": [
+    {
+      "kind": "xhr",
+      "url": "https://imapi.douyin.com/v1/message/get_message_by_init",
+      "method": "POST",
+      "body": "BYTES len=674",
+      "t": 1790343296462
+    },
+    {
+      "kind": "xhr",
+      "url": "https://imapi.douyin.com/v1/message/get_user_message",
+      "method": "POST",
+      "body": "BYTES len=695",
+      "t": 1790343297238
+    },
+    {
+      "kind": "xhr",
+      "url": "https://imapi.douyin.com/v1/stranger/get_conversation_list",
+      "method": "POST",
+      "body": "BYTES len=678",
+      "t": 1790343297245
+    },
+    {
+      "kind": "xhr",
+      "url": "https://imapi.douyin.com/v1/stranger/get_conversation_list",
+      "method": "POST",
+      "body": "BYTES len=678",
+      "t": 1790343298218
+    },
+    {
+      "kind": "xhr",
+      "url": "https://imapi.douyin.com/v1/message/get_user_message",
+      "method": "POST",
+      "body": "BYTES len=695",
+      "t": 1790343298529
+    },
+    {
+      "kind": "xhr",
+      "url": "https://imapi.douyin.com/v1/stranger/get_conversation_list",
+      "method": "POST",
+      "body": "BYTES len=678",
+      "t": 1790343298717
+    }
+  ]
+}

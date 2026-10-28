@@ -1,0 +1,682 @@
+[
+  {
+    "url": "https://lf-c-flwb.bytetos.com/obj/rc-client-security/c-webmssdk/1.0.0.20/webmssdk.es5.js",
+    "file": "/tmp/dyjs/live_scripts/000_webmssdk.es5.js",
+    "size": 387196
+  },
+  {
+    "url": "https://lf-c-flwb.bytetos.com/obj/rc-client-security/web/glue/1.0.0.64-fix.01/sdk-glue.js",
+    "file": "/tmp/dyjs/live_scripts/001_sdk-glue.js",
+    "size": 100348
+  },
+  {
+    "url": "https://lf-cdn-tos.bytescm.com/obj/rc-verifycenter/rmc-nocaptcha/1.0.0.52/setup.js",
+    "file": "/tmp/dyjs/live_scripts/002_setup.js",
+    "size": 266584
+  },
+  {
+    "url": "https://lf-cdn-tos.bytescm.com/obj/static/filter-xss/filter-xss-lastest.umd.js",
+    "file": "/tmp/dyjs/live_scripts/003_filter-xss-lastest.umd.js",
+    "size": 29497
+  },
+  {
+    "url": "https://lf-douyin-pc-web.douyinstatic.com/obj/douyin-pc-web/ies/douyin_web/11604.4e4340bb.js",
+    "file": "/tmp/dyjs/live_scripts/004_11604.4e4340bb.js",
+    "size": 156583
+  },
+  {
+    "url": "https://lf-douyin-pc-web.douyinstatic.com/obj/douyin-pc-web/ies/douyin_web/12178.b5d19cc4.js",
+    "file": "/tmp/dyjs/live_scripts/005_12178.b5d19cc4.js",
+    "size": 80849
+  },
+  {
+    "url": "https://lf-douyin-pc-web.douyinstatic.com/obj/douyin-pc-web/ies/douyin_web/12380.50902846.js",
+    "file": "/tmp/dyjs/live_scripts/006_12380.50902846.js",
+    "size": 93996
+  },
+  {
+    "url": "https://lf-douyin-pc-web.douyinstatic.com/obj/douyin-pc-web/ies/douyin_web/15347.7404f52a.js",
+    "file": "/tmp/dyjs/live_scripts/007_15347.7404f52a.js",
+    "size": 280143
+  },
+  {
+    "url": "https://lf-douyin-pc-web.douyinstatic.com/obj/douyin-pc-web/ies/douyin_web/18152.fb62454b.js",
+    "file": "/tmp/dyjs/live_scripts/008_18152.fb62454b.js",
+    "size": 122353
+  },
+  {
+    "url": "https://lf-douyin-pc-web.douyinstatic.com/obj/douyin-pc-web/ies/douyin_web/20441.187c2656.js",
+    "file": "/tmp/dyjs/live_scripts/009_20441.187c2656.js",
+    "size": 222118
+  },
+  {
+    "url": "https://lf-douyin-pc-web.douyinstatic.com/obj/douyin-pc-web/ies/douyin_web/20886.7d15209c.js",
+    "file": "/tmp/dyjs/live_scripts/010_20886.7d15209c.js",
+    "size": 106569
+  },
+  {
+    "url": "https://lf-douyin-pc-web.douyinstatic.com/obj/douyin-pc-web/ies/douyin_web/27913.209083a6.js",
+    "file": "/tmp/dyjs/live_scripts/011_27913.209083a6.js",
+    "size": 105266
+  },
+  {
+    "url": "https://lf-douyin-pc-web.douyinstatic.com/obj/douyin-pc-web/ies/douyin_web/27925.6dea7e4b.js",
+    "file": "/tmp/dyjs/live_scripts/012_27925.6dea7e4b.js",
+    "size": 138126
+  },
+  {
+    "url": "https://lf-douyin-pc-web.douyinstatic.com/obj/douyin-pc-web/ies/douyin_web/29264.25aca479.js",
+    "file": "/tmp/dyjs/live_scripts/013_29264.25aca479.js",
+    "size": 132059
+  },
+  {
+    "url": "https://lf-douyin-pc-web.douyinstatic.com/obj/douyin-pc-web/ies/douyin_web/30405.52a8d03f.js",
+    "file": "/tmp/dyjs/live_scripts/014_30405.52a8d03f.js",
+    "size": 105596
+  },
+  {
+    "url": "https://lf-douyin-pc-web.douyinstatic.com/obj/douyin-pc-web/ies/douyin_web/31483.558ef634.js",
+    "file": "/tmp/dyjs/live_scripts/015_31483.558ef634.js",
+    "size": 168309
+  },
+  {
+    "url": "https://lf-douyin-pc-web.douyinstatic.com/obj/douyin-pc-web/ies/douyin_web/31628.3e2dcf89.js",
+    "file": "/tmp/dyjs/live_scripts/016_31628.3e2dcf89.js",
+    "size": 242636
+  },
+  {
+    "url": "https://lf-douyin-pc-web.douyinstatic.com/obj/douyin-pc-web/ies/douyin_web/33899.08ceecc1.js",
+    "file": "/tmp/dyjs/live_scripts/017_33899.08ceecc1.js",
+    "size": 358545
+  },
+  {
+    "url": "https://lf-douyin-pc-web.douyinstatic.com/obj/douyin-pc-web/ies/douyin_web/35590.09d50fc9.js",
+    "file": "/tmp/dyjs/live_scripts/018_35590.09d50fc9.js",
+    "size": 97612
+  },
+  {
+    "url": "https://lf-douyin-pc-web.douyinstatic.com/obj/douyin-pc-web/ies/douyin_web/37435.6bb56b16.js",
+    "file": "/tmp/dyjs/live_scripts/019_37435.6bb56b16.js",
+    "size": 135198
+  },
+  {
+    "url": "https://lf-douyin-pc-web.douyinstatic.com/obj/douyin-pc-web/ies/douyin_web/43993.439c6ea2.js",
+    "file": "/tmp/dyjs/live_scripts/020_43993.439c6ea2.js",
+    "size": 285118
+  },
+  {
+    "url": "https://lf-douyin-pc-web.douyinstatic.com/obj/douyin-pc-web/ies/douyin_web/44662.10405ebe.js",
+    "file": "/tmp/dyjs/live_scripts/021_44662.10405ebe.js",
+    "size": 123632
+  },
+  {
+    "url": "https://lf-douyin-pc-web.douyinstatic.com/obj/douyin-pc-web/ies/douyin_web/44815.57780565.js",
+    "file": "/tmp/dyjs/live_scripts/022_44815.57780565.js",
+    "size": 118026
+  },
+  {
+    "url": "https://lf-douyin-pc-web.douyinstatic.com/obj/douyin-pc-web/ies/douyin_web/45894.886844b4.js",
+    "file": "/tmp/dyjs/live_scripts/023_45894.886844b4.js",
+    "size": 137056
+  },
+  {
+    "url": "https://lf-douyin-pc-web.douyinstatic.com/obj/douyin-pc-web/ies/douyin_web/46023.9ccba8d9.js",
+    "file": "/tmp/dyjs/live_scripts/024_46023.9ccba8d9.js",
+    "size": 92815
+  },
+  {
+    "url": "https://lf-douyin-pc-web.douyinstatic.com/obj/douyin-pc-web/ies/douyin_web/46057.7baebc4a.js",
+    "file": "/tmp/dyjs/live_scripts/025_46057.7baebc4a.js",
+    "size": 101653
+  },
+  {
+    "url": "https://lf-douyin-pc-web.douyinstatic.com/obj/douyin-pc-web/ies/douyin_web/46486.b53113a3.js",
+    "file": "/tmp/dyjs/live_scripts/026_46486.b53113a3.js",
+    "size": 81447
+  },
+  {
+    "url": "https://lf-douyin-pc-web.douyinstatic.com/obj/douyin-pc-web/ies/douyin_web/4787.23800b09.js",
+    "file": "/tmp/dyjs/live_scripts/027_4787.23800b09.js",
+    "size": 85321
+  },
+  {
+    "url": "https://lf-douyin-pc-web.douyinstatic.com/obj/douyin-pc-web/ies/douyin_web/48121.9af7dcf0.js",
+    "file": "/tmp/dyjs/live_scripts/028_48121.9af7dcf0.js",
+    "size": 115613
+  },
+  {
+    "url": "https://lf-douyin-pc-web.douyinstatic.com/obj/douyin-pc-web/ies/douyin_web/48912.dccadde8.js",
+    "file": "/tmp/dyjs/live_scripts/029_48912.dccadde8.js",
+    "size": 81844
+  },
+  {
+    "url": "https://lf-douyin-pc-web.douyinstatic.com/obj/douyin-pc-web/ies/douyin_web/51234.cb6b76ba.js",
+    "file": "/tmp/dyjs/live_scripts/030_51234.cb6b76ba.js",
+    "size": 130902
+  },
+  {
+    "url": "https://lf-douyin-pc-web.douyinstatic.com/obj/douyin-pc-web/ies/douyin_web/51381.ecfa136d.js",
+    "file": "/tmp/dyjs/live_scripts/031_51381.ecfa136d.js",
+    "size": 935778
+  },
+  {
+    "url": "https://lf-douyin-pc-web.douyinstatic.com/obj/douyin-pc-web/ies/douyin_web/52659.a7cb61a4.js",
+    "file": "/tmp/dyjs/live_scripts/032_52659.a7cb61a4.js",
+    "size": 130389
+  },
+  {
+    "url": "https://lf-douyin-pc-web.douyinstatic.com/obj/douyin-pc-web/ies/douyin_web/60414.ce58434e.js",
+    "file": "/tmp/dyjs/live_scripts/033_60414.ce58434e.js",
+    "size": 131040
+  },
+  {
+    "url": "https://lf-douyin-pc-web.douyinstatic.com/obj/douyin-pc-web/ies/douyin_web/61461.2bc503c1.js",
+    "file": "/tmp/dyjs/live_scripts/034_61461.2bc503c1.js",
+    "size": 100251
+  },
+  {
+    "url": "https://lf-douyin-pc-web.douyinstatic.com/obj/douyin-pc-web/ies/douyin_web/61650.c8e7932d.js",
+    "file": "/tmp/dyjs/live_scripts/035_61650.c8e7932d.js",
+    "size": 111676
+  },
+  {
+    "url": "https://lf-douyin-pc-web.douyinstatic.com/obj/douyin-pc-web/ies/douyin_web/61784.10035f78.js",
+    "file": "/tmp/dyjs/live_scripts/036_61784.10035f78.js",
+    "size": 102190
+  },
+  {
+    "url": "https://lf-douyin-pc-web.douyinstatic.com/obj/douyin-pc-web/ies/douyin_web/61947.4c7c3fd7.js",
+    "file": "/tmp/dyjs/live_scripts/037_61947.4c7c3fd7.js",
+    "size": 99610
+  },
+  {
+    "url": "https://lf-douyin-pc-web.douyinstatic.com/obj/douyin-pc-web/ies/douyin_web/62326.246fe772.js",
+    "file": "/tmp/dyjs/live_scripts/038_62326.246fe772.js",
+    "size": 138967
+  },
+  {
+    "url": "https://lf-douyin-pc-web.douyinstatic.com/obj/douyin-pc-web/ies/douyin_web/62779.fdece9f0.js",
+    "file": "/tmp/dyjs/live_scripts/039_62779.fdece9f0.js",
+    "size": 83921
+  },
+  {
+    "url": "https://lf-douyin-pc-web.douyinstatic.com/obj/douyin-pc-web/ies/douyin_web/63745.e86c4d80.js",
+    "file": "/tmp/dyjs/live_scripts/040_63745.e86c4d80.js",
+    "size": 107332
+  },
+  {
+    "url": "https://lf-douyin-pc-web.douyinstatic.com/obj/douyin-pc-web/ies/douyin_web/63748.eccbe3a2.js",
+    "file": "/tmp/dyjs/live_scripts/041_63748.eccbe3a2.js",
+    "size": 146631
+  },
+  {
+    "url": "https://lf-douyin-pc-web.douyinstatic.com/obj/douyin-pc-web/ies/douyin_web/66769.1cc901bc.js",
+    "file": "/tmp/dyjs/live_scripts/042_66769.1cc901bc.js",
+    "size": 100160
+  },
+  {
+    "url": "https://lf-douyin-pc-web.douyinstatic.com/obj/douyin-pc-web/ies/douyin_web/67431.acf73a30.js",
+    "file": "/tmp/dyjs/live_scripts/043_67431.acf73a30.js",
+    "size": 114910
+  },
+  {
+    "url": "https://lf-douyin-pc-web.douyinstatic.com/obj/douyin-pc-web/ies/douyin_web/73375.26092bd6.js",
+    "file": "/tmp/dyjs/live_scripts/044_73375.26092bd6.js",
+    "size": 87501
+  },
+  {
+    "url": "https://lf-douyin-pc-web.douyinstatic.com/obj/douyin-pc-web/ies/douyin_web/73389.2c37b48e.js",
+    "file": "/tmp/dyjs/live_scripts/045_73389.2c37b48e.js",
+    "size": 125078
+  },
+  {
+    "url": "https://lf-douyin-pc-web.douyinstatic.com/obj/douyin-pc-web/ies/douyin_web/74861.f50bb4dc.js",
+    "file": "/tmp/dyjs/live_scripts/046_74861.f50bb4dc.js",
+    "size": 104398
+  },
+  {
+    "url": "https://lf-douyin-pc-web.douyinstatic.com/obj/douyin-pc-web/ies/douyin_web/74899.39713478.js",
+    "file": "/tmp/dyjs/live_scripts/047_74899.39713478.js",
+    "size": 109076
+  },
+  {
+    "url": "https://lf-douyin-pc-web.douyinstatic.com/obj/douyin-pc-web/ies/douyin_web/79194.d2a02146.js",
+    "file": "/tmp/dyjs/live_scripts/048_79194.d2a02146.js",
+    "size": 171127
+  },
+  {
+    "url": "https://lf-douyin-pc-web.douyinstatic.com/obj/douyin-pc-web/ies/douyin_web/83277.6e16f5bd.js",
+    "file": "/tmp/dyjs/live_scripts/049_83277.6e16f5bd.js",
+    "size": 93995
+  },
+  {
+    "url": "https://lf-douyin-pc-web.douyinstatic.com/obj/douyin-pc-web/ies/douyin_web/87005.bc4458ba.js",
+    "file": "/tmp/dyjs/live_scripts/050_87005.bc4458ba.js",
+    "size": 98118
+  },
+  {
+    "url": "https://lf-douyin-pc-web.douyinstatic.com/obj/douyin-pc-web/ies/douyin_web/95534.7c5b4261.js",
+    "file": "/tmp/dyjs/live_scripts/051_95534.7c5b4261.js",
+    "size": 108415
+  },
+  {
+    "url": "https://lf-douyin-pc-web.douyinstatic.com/obj/douyin-pc-web/ies/douyin_web/97297.bcdcb34e.js",
+    "file": "/tmp/dyjs/live_scripts/052_97297.bcdcb34e.js",
+    "size": 755878
+  },
+  {
+    "url": "https://lf-douyin-pc-web.douyinstatic.com/obj/douyin-pc-web/ies/douyin_web/97508.fb791997.js",
+    "file": "/tmp/dyjs/live_scripts/053_97508.fb791997.js",
+    "size": 84623
+  },
+  {
+    "url": "https://lf-douyin-pc-web.douyinstatic.com/obj/douyin-pc-web/ies/douyin_web/98258.67e27758.js",
+    "file": "/tmp/dyjs/live_scripts/054_98258.67e27758.js",
+    "size": 85560
+  },
+  {
+    "url": "https://lf-douyin-pc-web.douyinstatic.com/obj/douyin-pc-web/ies/douyin_web/98853.efa3e4e8.js",
+    "file": "/tmp/dyjs/live_scripts/055_98853.efa3e4e8.js",
+    "size": 116371
+  },
+  {
+    "url": "https://lf-douyin-pc-web.douyinstatic.com/obj/douyin-pc-web/ies/douyin_web/98972.ead5748f.js",
+    "file": "/tmp/dyjs/live_scripts/056_98972.ead5748f.js",
+    "size": 95627
+  },
+  {
+    "url": "https://lf-douyin-pc-web.douyinstatic.com/obj/douyin-pc-web/ies/douyin_web/async/15829.65a9a5b6.js",
+    "file": "/tmp/dyjs/live_scripts/057_15829.65a9a5b6.js",
+    "size": 132722
+  },
+  {
+    "url": "https://lf-douyin-pc-web.douyinstatic.com/obj/douyin-pc-web/ies/douyin_web/async/20165.09aff41b.js",
+    "file": "/tmp/dyjs/live_scripts/058_20165.09aff41b.js",
+    "size": 3328
+  },
+  {
+    "url": "https://lf-douyin-pc-web.douyinstatic.com/obj/douyin-pc-web/ies/douyin_web/async/21138.497e5294.js",
+    "file": "/tmp/dyjs/live_scripts/059_21138.497e5294.js",
+    "size": 181275
+  },
+  {
+    "url": "https://lf-douyin-pc-web.douyinstatic.com/obj/douyin-pc-web/ies/douyin_web/async/36361.4d761eae.js",
+    "file": "/tmp/dyjs/live_scripts/060_36361.4d761eae.js",
+    "size": 285415
+  },
+  {
+    "url": "https://lf-douyin-pc-web.douyinstatic.com/obj/douyin-pc-web/ies/douyin_web/async/43562.18d0fbb2.js",
+    "file": "/tmp/dyjs/live_scripts/061_43562.18d0fbb2.js",
+    "size": 69566
+  },
+  {
+    "url": "https://lf-douyin-pc-web.douyinstatic.com/obj/douyin-pc-web/ies/douyin_web/async/48802.6d560998.js",
+    "file": "/tmp/dyjs/live_scripts/062_48802.6d560998.js",
+    "size": 128112
+  },
+  {
+    "url": "https://lf-douyin-pc-web.douyinstatic.com/obj/douyin-pc-web/ies/douyin_web/async/52804.9367d713.js",
+    "file": "/tmp/dyjs/live_scripts/063_52804.9367d713.js",
+    "size": 84445
+  },
+  {
+    "url": "https://lf-douyin-pc-web.douyinstatic.com/obj/douyin-pc-web/ies/douyin_web/async/73963.48504bef.js",
+    "file": "/tmp/dyjs/live_scripts/064_73963.48504bef.js",
+    "size": 19044
+  },
+  {
+    "url": "https://lf-douyin-pc-web.douyinstatic.com/obj/douyin-pc-web/ies/douyin_web/async/75285.4c07c04d.js",
+    "file": "/tmp/dyjs/live_scripts/065_75285.4c07c04d.js",
+    "size": 135636
+  },
+  {
+    "url": "https://lf-douyin-pc-web.douyinstatic.com/obj/douyin-pc-web/ies/douyin_web/async/83854.2bf261c4.js",
+    "file": "/tmp/dyjs/live_scripts/066_83854.2bf261c4.js",
+    "size": 55061
+  },
+  {
+    "url": "https://lf-douyin-pc-web.douyinstatic.com/obj/douyin-pc-web/ies/douyin_web/async/88481.90d095e5.js",
+    "file": "/tmp/dyjs/live_scripts/067_88481.90d095e5.js",
+    "size": 134
+  },
+  {
+    "url": "https://lf-douyin-pc-web.douyinstatic.com/obj/douyin-pc-web/ies/douyin_web/async/9075.0cabca16.js",
+    "file": "/tmp/dyjs/live_scripts/068_9075.0cabca16.js",
+    "size": 73718
+  },
+  {
+    "url": "https://lf-douyin-pc-web.douyinstatic.com/obj/douyin-pc-web/ies/douyin_web/async/90775.0c663da7.js",
+    "file": "/tmp/dyjs/live_scripts/069_90775.0c663da7.js",
+    "size": 243451
+  },
+  {
+    "url": "https://lf-douyin-pc-web.douyinstatic.com/obj/douyin-pc-web/ies/douyin_web/async/92362.c059cdd1.js",
+    "file": "/tmp/dyjs/live_scripts/070_92362.c059cdd1.js",
+    "size": 74341
+  },
+  {
+    "url": "https://lf-douyin-pc-web.douyinstatic.com/obj/douyin-pc-web/ies/douyin_web/async/99313.ff20717f.js",
+    "file": "/tmp/dyjs/live_scripts/071_99313.ff20717f.js",
+    "size": 88880
+  },
+  {
+    "url": "https://lf-douyin-pc-web.douyinstatic.com/obj/douyin-pc-web/ies/douyin_web/async/LiveDetailPortalWindowOpenInterceptor.723a9aac.js",
+    "file": "/tmp/dyjs/live_scripts/072_LiveDetailPortalWindowOpenInterceptor.723a9aac.js",
+    "size": 1092
+  },
+  {
+    "url": "https://lf-douyin-pc-web.douyinstatic.com/obj/douyin-pc-web/ies/douyin_web/async/island_4f5df.165e7355.js",
+    "file": "/tmp/dyjs/live_scripts/073_island_4f5df.165e7355.js",
+    "size": 22315
+  },
+  {
+    "url": "https://lf-douyin-pc-web.douyinstatic.com/obj/douyin-pc-web/ies/douyin_web/async/routes-Chat-route.9ddf560a.js",
+    "file": "/tmp/dyjs/live_scripts/074_routes-Chat-route.9ddf560a.js",
+    "size": 8844
+  },
+  {
+    "url": "https://lf-douyin-pc-web.douyinstatic.com/obj/douyin-pc-web/ies/douyin_web/client-entry~0.8262c998.js",
+    "file": "/tmp/dyjs/live_scripts/075_client-entry_0.8262c998.js",
+    "size": 318067
+  },
+  {
+    "url": "https://lf-douyin-pc-web.douyinstatic.com/obj/douyin-pc-web/ies/douyin_web/client-entry~3.d039ce00.js",
+    "file": "/tmp/dyjs/live_scripts/076_client-entry_3.d039ce00.js",
+    "size": 369518
+  },
+  {
+    "url": "https://lf-douyin-pc-web.douyinstatic.com/obj/douyin-pc-web/ies/douyin_web/client-entry~5.24ac23d5.js",
+    "file": "/tmp/dyjs/live_scripts/077_client-entry_5.24ac23d5.js",
+    "size": 235674
+  },
+  {
+    "url": "https://lf-douyin-pc-web.douyinstatic.com/obj/douyin-pc-web/ies/douyin_web/client-entry~5b58af49.79dc30a7.js",
+    "file": "/tmp/dyjs/live_scripts/078_client-entry_5b58af49.79dc30a7.js",
+    "size": 539358
+  },
+  {
+    "url": "https://lf-douyin-pc-web.douyinstatic.com/obj/douyin-pc-web/ies/douyin_web/client-entry~6.5ff2d547.js",
+    "file": "/tmp/dyjs/live_scripts/079_client-entry_6.5ff2d547.js",
+    "size": 236951
+  },
+  {
+    "url": "https://lf-douyin-pc-web.douyinstatic.com/obj/douyin-pc-web/ies/douyin_web/client-entry~9168a00b.747d621d.js",
+    "file": "/tmp/dyjs/live_scripts/080_client-entry_9168a00b.747d621d.js",
+    "size": 441339
+  },
+  {
+    "url": "https://lf-douyin-pc-web.douyinstatic.com/obj/douyin-pc-web/ies/douyin_web/client-entry~a8963009.f541c1c2.js",
+    "file": "/tmp/dyjs/live_scripts/081_client-entry_a8963009.f541c1c2.js",
+    "size": 858100
+  },
+  {
+    "url": "https://lf-douyin-pc-web.douyinstatic.com/obj/douyin-pc-web/ies/douyin_web/client-entry~c01d2505.57a98fe2.js",
+    "file": "/tmp/dyjs/live_scripts/082_client-entry_c01d2505.57a98fe2.js",
+    "size": 546459
+  },
+  {
+    "url": "https://lf-douyin-pc-web.douyinstatic.com/obj/douyin-pc-web/ies/douyin_web/framework.78673791.js",
+    "file": "/tmp/dyjs/live_scripts/083_framework.78673791.js",
+    "size": 340696
+  },
+  {
+    "url": "https://lf-douyin-pc-web.douyinstatic.com/obj/douyin-pc-web/ies/douyin_web/libs/pre-build-xgplayer.cdf9bd18.js",
+    "file": "/tmp/dyjs/live_scripts/084_pre-build-xgplayer.cdf9bd18.js",
+    "size": 429964
+  },
+  {
+    "url": "https://lf-douyin-pc-web.douyinstatic.com/obj/douyin-pc-web/ies/douyin_web/lottie.bf6deed1.js",
+    "file": "/tmp/dyjs/live_scripts/085_lottie.bf6deed1.js",
+    "size": 328942
+  },
+  {
+    "url": "https://lf-douyin-pc-web.douyinstatic.com/obj/douyin-pc-web/ies/douyin_web/player-0.1318e903.js",
+    "file": "/tmp/dyjs/live_scripts/086_player-0.1318e903.js",
+    "size": 135351
+  },
+  {
+    "url": "https://lf-douyin-pc-web.douyinstatic.com/obj/douyin-pc-web/ies/douyin_web/player-1.272f7dc6.js",
+    "file": "/tmp/dyjs/live_scripts/087_player-1.272f7dc6.js",
+    "size": 249292
+  },
+  {
+    "url": "https://lf-douyin-pc-web.douyinstatic.com/obj/douyin-pc-web/ies/douyin_web/player-10.9f0bee38.js",
+    "file": "/tmp/dyjs/live_scripts/088_player-10.9f0bee38.js",
+    "size": 242648
+  },
+  {
+    "url": "https://lf-douyin-pc-web.douyinstatic.com/obj/douyin-pc-web/ies/douyin_web/player-11.193ccfc8.js",
+    "file": "/tmp/dyjs/live_scripts/089_player-11.193ccfc8.js",
+    "size": 114717
+  },
+  {
+    "url": "https://lf-douyin-pc-web.douyinstatic.com/obj/douyin-pc-web/ies/douyin_web/player-12.a4a3707c.js",
+    "file": "/tmp/dyjs/live_scripts/090_player-12.a4a3707c.js",
+    "size": 176869
+  },
+  {
+    "url": "https://lf-douyin-pc-web.douyinstatic.com/obj/douyin-pc-web/ies/douyin_web/player-13.53f6f32c.js",
+    "file": "/tmp/dyjs/live_scripts/091_player-13.53f6f32c.js",
+    "size": 127709
+  },
+  {
+    "url": "https://lf-douyin-pc-web.douyinstatic.com/obj/douyin-pc-web/ies/douyin_web/player-2.3da20b2d.js",
+    "file": "/tmp/dyjs/live_scripts/092_player-2.3da20b2d.js",
+    "size": 125644
+  },
+  {
+    "url": "https://lf-douyin-pc-web.douyinstatic.com/obj/douyin-pc-web/ies/douyin_web/player-3.ead2f270.js",
+    "file": "/tmp/dyjs/live_scripts/093_player-3.ead2f270.js",
+    "size": 433213
+  },
+  {
+    "url": "https://lf-douyin-pc-web.douyinstatic.com/obj/douyin-pc-web/ies/douyin_web/player-4.c788695e.js",
+    "file": "/tmp/dyjs/live_scripts/094_player-4.c788695e.js",
+    "size": 588990
+  },
+  {
+    "url": "https://lf-douyin-pc-web.douyinstatic.com/obj/douyin-pc-web/ies/douyin_web/player-5.cac958d8.js",
+    "file": "/tmp/dyjs/live_scripts/095_player-5.cac958d8.js",
+    "size": 554610
+  },
+  {
+    "url": "https://lf-douyin-pc-web.douyinstatic.com/obj/douyin-pc-web/ies/douyin_web/player-6.10933966.js",
+    "file": "/tmp/dyjs/live_scripts/096_player-6.10933966.js",
+    "size": 134432
+  },
+  {
+    "url": "https://lf-douyin-pc-web.douyinstatic.com/obj/douyin-pc-web/ies/douyin_web/player-7.c37a8c7e.js",
+    "file": "/tmp/dyjs/live_scripts/097_player-7.c37a8c7e.js",
+    "size": 120639
+  },
+  {
+    "url": "https://lf-douyin-pc-web.douyinstatic.com/obj/douyin-pc-web/ies/douyin_web/player-8.5318d288.js",
+    "file": "/tmp/dyjs/live_scripts/098_player-8.5318d288.js",
+    "size": 137367
+  },
+  {
+    "url": "https://lf-douyin-pc-web.douyinstatic.com/obj/douyin-pc-web/ies/douyin_web/player-9.e0c7fd18.js",
+    "file": "/tmp/dyjs/live_scripts/099_player-9.e0c7fd18.js",
+    "size": 116555
+  },
+  {
+    "url": "https://lf-douyin-pc-web.douyinstatic.com/obj/douyin-pc-web/ies/douyin_web/polyfill.c483eeb9.js",
+    "file": "/tmp/dyjs/live_scripts/100_polyfill.c483eeb9.js",
+    "size": 175893
+  },
+  {
+    "url": "https://lf-douyin-pc-web.douyinstatic.com/obj/douyin-pc-web/ies/douyin_web/runtime~client-entry.06a2b1d7.js",
+    "file": "/tmp/dyjs/live_scripts/101_runtime_client-entry.06a2b1d7.js",
+    "size": 55848
+  },
+  {
+    "url": "https://lf-douyin-pc-web.douyinstatic.com/obj/douyin-pc-web/ies/douyin_web/static-style.132f0d96.js",
+    "file": "/tmp/dyjs/live_scripts/102_static-style.132f0d96.js",
+    "size": 22652
+  },
+  {
+    "url": "https://lf-douyin-pc-web.douyinstatic.com/obj/passport-fe/ucenter_fe/@byted/uc-secure-dtrait-core/1.0.0.16/dist/index.umd.production.js",
+    "file": "/tmp/dyjs/live_scripts/103_index.umd.production.js",
+    "size": 87576
+  },
+  {
+    "url": "https://lf-rc1.yhgfb-cn-static.com/obj/rc-verifycenter/sec_sdk_build/4.0.28/captcha/index.js",
+    "file": "/tmp/dyjs/live_scripts/104_index.js",
+    "size": 84508
+  },
+  {
+    "url": "https://lf-rc1.yhgfb-cn-static.com/obj/rc-verifycenter/verifycenter/1.0.0.421/index.js",
+    "file": "/tmp/dyjs/live_scripts/105_index.js",
+    "size": 63932
+  },
+  {
+    "url": "https://lf-security.bytegoofy.com/obj/security-secsdk/runtime_bundler_34_v2.js",
+    "file": "/tmp/dyjs/live_scripts/106_runtime_bundler_34_v2.js",
+    "size": 196621
+  },
+  {
+    "url": "https://lf-static.applogcdn.com/obj/applog-sdk-static/log-sdk/collect/5/collect.dy.js",
+    "file": "/tmp/dyjs/live_scripts/107_collect.dy.js",
+    "size": 190772
+  },
+  {
+    "url": "https://lf-ucenter-web.yhgfb-cn-static.com/obj/passport-fe/ucenter_fe/@byted/uc-secure-monitor-base/1.0.4/dist/index.umd.production.js",
+    "file": "/tmp/dyjs/live_scripts/108_index.umd.production.js",
+    "size": 235871
+  },
+  {
+    "url": "https://lf-ucenter-web.yhgfb-cn-static.com/obj/passport-fe/ucenter_fe/@byted/uc-secure-tool-detect/latest/dist/index.umd.production.js",
+    "file": "/tmp/dyjs/live_scripts/109_index.umd.production.js",
+    "size": 8501
+  },
+  {
+    "url": "https://lf3-short.ibytedapm.com/slardar/fe/sdk-web/browser.cn.js?bid=douyin_web&globalName=Slardar",
+    "file": "/tmp/dyjs/live_scripts/110_browser.cn.js_bid_douyin_web_globalName_Slardar",
+    "size": 46192
+  },
+  {
+    "url": "https://lf3-short.ibytedapm.com/slardar/fe/sdk-web/plugins/action.1.16.9.js",
+    "file": "/tmp/dyjs/live_scripts/111_action.1.16.9.js",
+    "size": 11759
+  },
+  {
+    "url": "https://lf3-short.ibytedapm.com/slardar/fe/sdk-web/plugins/blank-screen.1.16.7.js",
+    "file": "/tmp/dyjs/live_scripts/112_blank-screen.1.16.7.js",
+    "size": 9167
+  },
+  {
+    "url": "https://lf3-short.ibytedapm.com/slardar/fe/sdk-web/plugins/blank-screen.1.16.9.js",
+    "file": "/tmp/dyjs/live_scripts/113_blank-screen.1.16.9.js",
+    "size": 9089
+  },
+  {
+    "url": "https://lf3-short.ibytedapm.com/slardar/fe/sdk-web/plugins/common-monitors.1.16.7.js",
+    "file": "/tmp/dyjs/live_scripts/114_common-monitors.1.16.7.js",
+    "size": 24615
+  },
+  {
+    "url": "https://lf3-short.ibytedapm.com/slardar/fe/sdk-web/plugins/common-monitors.1.16.9.js",
+    "file": "/tmp/dyjs/live_scripts/115_common-monitors.1.16.9.js",
+    "size": 24537
+  },
+  {
+    "url": "https://lf3-social.iesdouyin.com/obj/douyin-social-cdn/pcim/static/js/async/1323.522c9c37.js",
+    "file": "/tmp/dyjs/live_scripts/116_1323.522c9c37.js",
+    "size": 21391
+  },
+  {
+    "url": "https://lf3-social.iesdouyin.com/obj/douyin-social-cdn/pcim/static/js/async/2997.8c612389.js",
+    "file": "/tmp/dyjs/live_scripts/117_2997.8c612389.js",
+    "size": 123594
+  },
+  {
+    "url": "https://lf3-social.iesdouyin.com/obj/douyin-social-cdn/pcim/static/js/async/3609.a29445ea.js",
+    "file": "/tmp/dyjs/live_scripts/118_3609.a29445ea.js",
+    "size": 55196
+  },
+  {
+    "url": "https://lf3-social.iesdouyin.com/obj/douyin-social-cdn/pcim/static/js/async/4097.55355a70.js",
+    "file": "/tmp/dyjs/live_scripts/119_4097.55355a70.js",
+    "size": 15837
+  },
+  {
+    "url": "https://lf3-social.iesdouyin.com/obj/douyin-social-cdn/pcim/static/js/async/4187.2096e141.js",
+    "file": "/tmp/dyjs/live_scripts/120_4187.2096e141.js",
+    "size": 1179809
+  },
+  {
+    "url": "https://lf3-social.iesdouyin.com/obj/douyin-social-cdn/pcim/static/js/async/5493.fc2f337e.js",
+    "file": "/tmp/dyjs/live_scripts/121_5493.fc2f337e.js",
+    "size": 131
+  },
+  {
+    "url": "https://lf3-social.iesdouyin.com/obj/douyin-social-cdn/pcim/static/js/async/5770.e3976dc1.js",
+    "file": "/tmp/dyjs/live_scripts/122_5770.e3976dc1.js",
+    "size": 201144
+  },
+  {
+    "url": "https://lf3-social.iesdouyin.com/obj/douyin-social-cdn/pcim/static/js/async/7059.7265e3f7.js",
+    "file": "/tmp/dyjs/live_scripts/123_7059.7265e3f7.js",
+    "size": 48277
+  },
+  {
+    "url": "https://lf3-social.iesdouyin.com/obj/douyin-social-cdn/pcim/static/js/async/8255.d48072aa.js",
+    "file": "/tmp/dyjs/live_scripts/124_8255.d48072aa.js",
+    "size": 233493
+  },
+  {
+    "url": "https://lf3-social.iesdouyin.com/obj/douyin-social-cdn/pcim/static/js/async/8832.dafa96e1.js",
+    "file": "/tmp/dyjs/live_scripts/125_8832.dafa96e1.js",
+    "size": 11423
+  },
+  {
+    "url": "https://lf3-social.iesdouyin.com/obj/douyin-social-cdn/pcim/static/js/async/8866.2cfba86a.js",
+    "file": "/tmp/dyjs/live_scripts/126_8866.2cfba86a.js",
+    "size": 57945
+  },
+  {
+    "url": "https://lf3-social.iesdouyin.com/obj/douyin-social-cdn/pcim/static/js/async/9595.8155b7c4.js",
+    "file": "/tmp/dyjs/live_scripts/127_9595.8155b7c4.js",
+    "size": 26155
+  },
+  {
+    "url": "https://lf3-social.iesdouyin.com/obj/douyin-social-cdn/pcim/static/js/async/__federation_expose_default_export.0ccd0cf4.js",
+    "file": "/tmp/dyjs/live_scripts/128___federation_expose_default_export.0ccd0cf4.js",
+    "size": 4886184
+  },
+  {
+    "url": "https://lf3-social.iesdouyin.com/obj/douyin-social-cdn/pcim/static/js/async/lib-axios.5997a318.js",
+    "file": "/tmp/dyjs/live_scripts/129_lib-axios.5997a318.js",
+    "size": 126458
+  },
+  {
+    "url": "https://lf3-social.iesdouyin.com/obj/douyin-social-cdn/pcim/static/js/lib-polyfill.a4825970.js",
+    "file": "/tmp/dyjs/live_scripts/130_lib-polyfill.a4825970.js",
+    "size": 186369
+  },
+  {
+    "url": "https://lf3-social.iesdouyin.com/obj/douyin-social-cdn/pcim/vmok-remote-entry.880e9c0e.js",
+    "file": "/tmp/dyjs/live_scripts/131_vmok-remote-entry.880e9c0e.js",
+    "size": 131542
+  },
+  {
+    "url": "https://lf3-static.bytednsdoc.com/obj/eden-cn/666eh7nuhfvhpebd/douyin_web/index-ad-22.js",
+    "file": "/tmp/dyjs/live_scripts/132_index-ad-22.js",
+    "size": 154
+  },
+  {
+    "url": "https://p-pc-weboff.byteimg.com/tos-cn-i-9r5gewecjs/bdms_1.0.1.19_fix.js",
+    "file": "/tmp/dyjs/live_scripts/133_bdms_1.0.1.19_fix.js",
+    "size": 147530
+  },
+  {
+    "url": "https://privacy.zijieapi.com/api/web-cmp/sdk/?project_key=dd2ac766b575c31f",
+    "file": "/tmp/dyjs/live_scripts/134__project_key_dd2ac766b575c31f",
+    "size": 0
+  },
+  {
+    "url": "https://sf1-cdn-tos.douyinstatic.com/obj/accessibility-task-platform/entrance/a11y_web_init.js",
+    "file": "/tmp/dyjs/live_scripts/135_a11y_web_init.js",
+    "size": 5516
+  }
+]

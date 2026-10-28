@@ -1,0 +1,329 @@
+// 抖音 IM 协议补充定义（仓库外部，不改动 douyin-spider 任何源码）。
+//
+// 这里只定义 douyin-spider/static/*.proto 里【没有】的那部分消息，
+// 全部字段号来自抖音 web 端 iM SDK 的 protobuf 描述符（im_proto）
+// 或对线上响应的逐字段实测解码，不是猜测。
+//
+// 已覆盖并【实测通过】的线上端点：
+//   cmd 100   POST /v1/message/send                   发消息（含群聊）
+//   cmd 301   POST /v1/message/get_by_conversation     会话消息历史
+//   cmd 605   POST /v1/conversation/participants_list  群成员列表
+//   cmd 610   POST /v2/conversation/get_info_list      会话信息（票/群名/群主）
+//   cmd 702   POST /v1/message/recall                  撤回消息
+//   cmd 2006  POST /v1/conversation/list               会话列表（con_type 可选群）
+//   cmd 2015  POST /v1/profile/get_info                用户昵称/头像
+//
+// 信封 Request/Response 与项目内 Request.proto / Response.proto 的字段号
+// 完全一致（同样的 8/6 号 body 字段、同样的头部字段），因此可以：
+//   1. 用项目的 ProtoBuilder.build_normal_request() 造信封（复用全部头部逻辑）
+//   2. 序列化后用本文件的 Im_pb2.Request 反解 → 清空 body → 填自己的分支 → 再序列化
+// 这样既复用项目逻辑，又不需要给项目的 oneof 加字段，也不用做原始字节拼接。
+syntax = "proto3";
+
+package dyim;
+
+// ------------------------------------------------------------------ 通用
+
+message ExtValue {
+    string key = 1;
+    string value = 2;
+}
+
+// ------------------------------------------- cmd 100 发送消息 (message/send)
+
+message SendMessageRequestBody {
+    string conversation_id = 1;
+    int32 conversation_type = 2;
+    int64 conversation_short_id = 3;
+    string content = 4;
+    repeated ExtValue ext = 5;
+    int32 message_type = 6;
+    string ticket = 7;
+    string client_message_id = 8;
+    repeated int64 mentioned_users = 9;
+    bool ignore_badge_count = 10;
+    ReferencedMessageInfo ref_msg_info = 11;
+}
+
+message ReferencedMessageInfo {
+    int64 original_message_id = 1;
+    string original_message_sender = 2;
+    int64 original_message_timestamp = 3;
+}
+
+// ------------------------------------------- cmd 605 群成员列表 (participants_list)
+
+message ConversationParticipantsListRequestBody {
+    string conversation_id = 1;
+    int64 conversation_short_id = 2;
+    int32 conversation_type = 3;
+    int64 cursor = 4;
+    int32 limit = 5;
+}
+
+message Participant {
+    int64 user_id = 1;
+    int64 sort_order = 2;
+    int32 role = 3;
+    string alias = 4;
+    string sec_uid = 5;
+    int32 blocked = 6;
+    int64 left_block_time = 7;
+    map<string, string> ext = 8;
+}
+
+message ParticipantsPage {
+    repeated Participant participants = 1;
+    bool has_more = 2;
+    int64 cursor = 3;
+}
+
+message ConversationParticipantsListResponseBody {
+    ParticipantsPage participants_page = 1;
+}
+
+// ------------------------------------------- cmd 702 撤回消息 (recall)
+
+message RecallMessageRequestBody {
+    string conversation_id = 1;
+    int64 conversation_short_id = 2;
+    int32 conversation_type = 3;
+    int64 server_message_id = 4;
+}
+
+// recall 的响应体在线上只有一个 toast 字段
+message RecallMessageResponseBody {
+    string toast = 1;
+}
+
+// ------------------------------------------- cmd 2006 会话列表 (conversation/list)
+
+// 请求字段实测：2=cursor 3=con_type 4=limit 8=with_cold
+// con_type: 1=单聊 2=群聊（实测 1 只回单聊、2 只回群聊，0/3/8 报 StatusCodeRemoteNetError）
+message GetUserConversationListRequestBody {
+    int32 sort_type = 1;
+    int64 cursor = 2;
+    int32 con_type = 3;
+    int32 limit = 4;
+    int32 with_cold = 8;
+}
+
+message ConversationCoreInfo {
+    string conversation_id = 1;
+    int64 conversation_short_id = 2;
+    int32 conversation_type = 3;
+    string name = 5;
+    string icon = 7;
+    int64 owner = 12;
+    string sec_owner = 13;
+}
+
+message ConversationSettingInfo {
+    string conversation_id = 1;
+    int64 conversation_short_id = 2;
+    int32 conversation_type = 3;
+    int64 participants_count = 14;
+    int64 member_count = 16;
+}
+
+message Conversation {
+    string conversation_id = 1;
+    int64 conversation_short_id = 2;
+    int32 conversation_type = 3;
+    string ticket = 4;
+    ParticipantsPage participants_page = 6;
+    int32 participant_count = 7;
+    int32 unread_count = 10;
+    ConversationCoreInfo core_info = 50;
+    ConversationSettingInfo setting_info = 51;
+}
+
+message GetUserConversationListResponseBody {
+    repeated Conversation conversations = 1;
+    bool has_more = 2;
+    int64 total = 3;
+}
+
+// ------------------------------------------- cmd 301 会话消息历史 (get_by_conversation)
+
+// 请求字段实测：1=conversation_id 2=conversation_type 3=conversation_short_id
+//               4=cursor 5=direction 6=limit
+message GetByConversationRequestBody {
+    string conversation_id = 1;
+    int32 conversation_type = 2;
+    int64 conversation_short_id = 3;
+    int64 cursor = 4;
+    int32 direction = 5;
+    int32 limit = 6;
+}
+
+// 线上 ImMessage：1..8 与 MessageBody 字段号一致，9=ext 10=create_time 14=sender_sec_uid
+message ImMessage {
+    string conversation_id = 1;
+    int32 conversation_type = 2;
+    int64 server_message_id = 3;
+    int64 index_in_conversation = 4;
+    int64 conversation_short_id = 5;
+    int32 message_type = 6;
+    int64 sender = 7;
+    string content = 8;
+    repeated ExtValue ext = 9;
+    int64 create_time = 10;
+    string sender_sec_uid = 14;
+    int64 order_in_conversation = 17;
+}
+
+message GetByConversationResponseBody {
+    repeated ImMessage messages = 1;
+    int64 next_cursor = 2;
+    bool has_more = 3;
+}
+
+// ------------------------------------------- cmd 610 会话信息 (get_info_list)
+
+// 注意：线上这个请求体是**嵌套**的，1 号字段 data 才是真正的参数
+// （项目的 Request.proto 也是这个形状，我先前写成平铺，线上直接回 2 字节空响应）。
+message GetConversationInfoListV2RequestBody {
+    GetConversationInfoListV2RequestData data = 1;
+}
+
+message GetConversationInfoListV2RequestData {
+    string conversation_id = 1;
+    int64 conversation_short_id = 2;
+    int32 conversation_type = 3;
+}
+
+message ConversationInfoV2 {
+    string conversation_id = 1;
+    int64 conversation_short_id = 2;
+    int32 conversation_type = 3;
+    string ticket = 4;
+    int64 participants_count = 7;
+    ParticipantsPage participants_page = 6;
+    int64 online_member_count = 30;
+    ConversationCoreInfo core_info = 50;
+}
+
+message GetConversationInfoListV2ResponseBody {
+    repeated ConversationInfoV2 conversation_info_list = 1;
+}
+
+// ------------------------------------------- cmd 2015 用户资料 (profile/get_info)
+
+message ProfileGetInfoRequestBody {
+    int64 userid = 1;   // 线上是 required 字段
+    bool from_source = 2;
+}
+
+message Profile {
+    string nick_name = 1;
+    string protrait = 2;      // 线上原文拼写就是 protrait（头像）
+    string basic_ext_info = 3;
+    string detail_ext_info = 4;
+    int64 uid = 5;
+    map<string, string> ext = 6;
+    int64 create_time = 7;
+    int64 modify_time = 8;
+    bool is_robot = 9;
+}
+
+message ProfileGetInfoResponseBody {
+    Profile profile = 1;
+}
+
+// ------------------------------------------- cmd 500 新消息推送
+
+message NewMessageNotify {
+    string conversation_id = 2;
+    int32 conversation_type = 3;
+    int32 notify_type = 4;
+    ImMessage message = 5;
+}
+
+// ------------------------------------------- 信封（字段号与项目内一致）
+
+message Request {
+    int32 cmd = 1;
+    int64 sequence_id = 2;
+    string sdk_version = 3;
+    string token = 4;
+    int32 refer = 5;
+    int64 inbox_type = 6;
+    string build_number = 7;
+    RequestBody body = 8;
+    string device_id = 9;
+    string channel = 10;
+    string device_platform = 11;
+    string device_type = 12;
+    string os_version = 13;
+    string version_code = 14;
+    map<string, string> headers = 15;
+    int32 config_id = 16;
+    TokenInfo token_info = 17;
+    int32 auth_type = 18;
+    string biz = 21;
+    string access = 22;
+    string ts_sign = 23;
+    string sdk_cert = 24;
+    string reuqest_sign = 25;
+}
+
+message TokenInfo {
+    int32 mark_id = 1;
+    int32 type = 2;
+    int32 app_id = 3;
+    int64 user_id = 4;
+    int64 timestamp = 5;
+}
+
+// 覆盖桥用到的全部分支。未知分支反解时会被 skip 掉，不影响其它字段。
+message RequestBody {
+    oneof body {
+        SendMessageRequestBody send_message_body = 100;
+        GetByConversationRequestBody get_by_conversation_body = 301;
+        ConversationParticipantsListRequestBody conversation_participants_body = 605;
+        GetConversationInfoListV2RequestBody get_conversation_info_list_v2_body = 610;
+        RecallMessageRequestBody recall_message_body = 702;
+        GetUserConversationListRequestBody get_user_conversation_list_body = 2006;
+        ProfileGetInfoRequestBody profile_get_info = 2015;
+    }
+}
+
+message Response {
+    int32 cmd = 1;
+    int64 sequence_id = 2;
+    int32 status_code = 3;
+    string message = 4;
+    int64 inbox_type = 5;
+    ResponseBody body = 6;
+    string log_id = 7;
+}
+
+message ResponseBody {
+    oneof body {
+        SendMessageResponseBody send_message_body = 100;
+        GetByConversationResponseBody get_by_conversation_body = 301;
+        NewMessageNotify new_message_notify = 500;
+        ConversationParticipantsListResponseBody conversation_participants_body = 605;
+        GetConversationInfoListV2ResponseBody get_conversation_info_list_v2_body = 610;
+        RecallMessageResponseBody recall_message_body = 702;
+        GetUserConversationListResponseBody get_user_conversation_list_body = 2006;
+        ProfileGetInfoResponseBody profile_get_info = 2015;
+    }
+}
+
+// 发送响应体：实测只带一个 server_message_id
+message SendMessageResponseBody {
+    int64 server_message_id = 1;
+    ImMessage message = 2;
+}
+
+// 关于"别人撤回消息"的推送：线上并没有独立的 cmd/通知体。
+// 撤回是以一条普通 NewMessageNotify 推下来的，靠 ImMessage.ext 里这几个
+// key 表达（见 web 端 IM SDK 常量表，已在 301 历史里实测到）：
+//     s:is_recalled             "true" 表示这条消息已被撤回
+//     s:recall_uid              发起撤回的 uid
+//     s:recall_role             谁撤的（0=自己撤回 …）
+//     a:recalled_msg_type       被撤回消息的原类型
+//     s:target_server_message_id  撤回事件（mt=40001）指向的目标消息 id
+// 因此桥里判断撤回是【读 ext】，不依赖任何未经验证的 message_type 数字。

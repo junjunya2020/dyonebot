@@ -1,0 +1,76 @@
+{
+  "log_file": "/root/dyonebot/dy-bot/logs/bridge.log",
+  "state_file": "/root/dyonebot/dy-bot/onebot_bridge_state.json",
+  "self_id": 0,
+  "skip_self": true,
+  "emit_notices": false,
+  "send_interval_sec": 0.8,
+  "reverse_ws": {
+    "enabled": true,
+    "urls": [
+      "ws://YOUR_ASTRBOT_HOST:8848/ws"
+    ],
+    "access_token": "CHANGE_ME",
+    "reconnect_min_sec": 1.0,
+    "reconnect_max_sec": 30.0
+  },
+  "forward_ws": {
+    "enabled": true,
+    "host": "127.0.0.1",
+    "port": 6700,
+    "path": "/",
+    "access_token": "CHANGE_ME",
+    "heartbeat_sec": 30
+  },
+  "http_api": {
+    "enabled": true,
+    "host": "127.0.0.1",
+    "port": 6701,
+    "path": "/",
+    "access_token": "CHANGE_ME"
+  },
+  "http_post": {
+    "enabled": false,
+    "urls": [],
+    "secret": "",
+    "timeout_sec": 8
+  },
+  "recall_poll": {
+    "enabled": true,
+    "interval_sec": 20,
+    "history_limit": 30,
+    "scope": "groups"
+  },
+  "profile_prefetch": {
+    "enabled": true,
+    "on_start": true,
+    "max_members": 200,
+    "group_limit": 20
+  },
+  "media": {
+    "enabled": true,
+    "public_base": "http://127.0.0.1:6801",
+    "port": 6801,
+    "path": "/media",
+    "ttl_sec": 3600,
+    "max_files": 400,
+    "fetch_timeout_sec": 20
+  },
+  "douyin_ws": {
+    "ping_interval_sec": 25,
+    "reconnect_min_sec": 2.0,
+    "reconnect_max_sec": 60.0,
+    "direct_retries": 5,
+    "token_retries": 3,
+    "stable_sec": 60.0
+  },
+  "webui": {
+    "enabled": true,
+    "host": [
+      "127.0.0.1"
+    ],
+    "port": 6800,
+    "token": "",
+    "title": "dyonebot 控制面板"
+  }
+}
